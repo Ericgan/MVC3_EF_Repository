@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALServices", "DALServices\DALServices.csproj", "{28BE7CBB-8638-4016-854B-6E092AE2DB1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{0E4F3B4B-058F-45CA-BECF-63F232DAA53B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{897B79BB-CB86-44DB-9A9D-300BC5F12E96}"
+	ProjectSection(SolutionItems) = preProject
+		DAL.vsmdi = DAL.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{7FCB46D7-5E16-4003-891E-D8AC62E61826}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ref", "ref", "{032B8E34-BAD9-44F6-BCDB-25D5F7FADF5D}"
+	ProjectSection(SolutionItems) = preProject
+		ref\EntityFramework.dll = ref\EntityFramework.dll
+		ref\Microsoft.Practices.ServiceLocation.dll = ref\Microsoft.Practices.ServiceLocation.dll
+		ref\Microsoft.Practices.Unity.Configuration.dll = ref\Microsoft.Practices.Unity.Configuration.dll
+		ref\Microsoft.Practices.Unity.dll = ref\Microsoft.Practices.Unity.dll
+		ref\Microsoft.Practices.Unity.Interception.Configuration.dll = ref\Microsoft.Practices.Unity.Interception.Configuration.dll
+		ref\Microsoft.Practices.Unity.Interception.dll = ref\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{C86D0208-71A0-477E-9727-D8F3EEE40B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDALService", "IDALService\IDALService.csproj", "{40533482-388B-4F4C-8C96-578618BAABFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{790E6D3D-2046-46D2-AD21-AF4F18DF213A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDALServices.Test", "IDALService.Test\IDALServices.Test.csproj", "{983F0D15-0578-4791-A522-35D9D7C47ECC}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DAL.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28BE7CBB-8638-4016-854B-6E092AE2DB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BE7CBB-8638-4016-854B-6E092AE2DB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BE7CBB-8638-4016-854B-6E092AE2DB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BE7CBB-8638-4016-854B-6E092AE2DB1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4F3B4B-058F-45CA-BECF-63F232DAA53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4F3B4B-058F-45CA-BECF-63F232DAA53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4F3B4B-058F-45CA-BECF-63F232DAA53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4F3B4B-058F-45CA-BECF-63F232DAA53B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FCB46D7-5E16-4003-891E-D8AC62E61826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FCB46D7-5E16-4003-891E-D8AC62E61826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FCB46D7-5E16-4003-891E-D8AC62E61826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FCB46D7-5E16-4003-891E-D8AC62E61826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86D0208-71A0-477E-9727-D8F3EEE40B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86D0208-71A0-477E-9727-D8F3EEE40B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86D0208-71A0-477E-9727-D8F3EEE40B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86D0208-71A0-477E-9727-D8F3EEE40B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40533482-388B-4F4C-8C96-578618BAABFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40533482-388B-4F4C-8C96-578618BAABFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40533482-388B-4F4C-8C96-578618BAABFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40533482-388B-4F4C-8C96-578618BAABFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790E6D3D-2046-46D2-AD21-AF4F18DF213A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790E6D3D-2046-46D2-AD21-AF4F18DF213A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790E6D3D-2046-46D2-AD21-AF4F18DF213A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790E6D3D-2046-46D2-AD21-AF4F18DF213A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983F0D15-0578-4791-A522-35D9D7C47ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983F0D15-0578-4791-A522-35D9D7C47ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983F0D15-0578-4791-A522-35D9D7C47ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983F0D15-0578-4791-A522-35D9D7C47ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
