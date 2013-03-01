@@ -55,9 +55,9 @@
       <Project>{28BE7CBB-8638-4016-854B-6E092AE2DB1F}</Project>
       <Name>DALServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IDALService\IDALService.csproj">
+    <ProjectReference Include="..\IDALService\IDALServices.csproj">
       <Project>{40533482-388B-4F4C-8C96-578618BAABFD}</Project>
-      <Name>IDALService</Name>
+      <Name>IDALServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{790E6D3D-2046-46D2-AD21-AF4F18DF213A}</Project>

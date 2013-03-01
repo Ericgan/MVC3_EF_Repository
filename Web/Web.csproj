@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\PkgOrderController.cs" />
+    <Compile Include="Controllers\TestRunController.cs" />
     <Compile Include="Core\UnityDependencyResolver.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -146,10 +147,13 @@
       <Project>{790E6D3D-2046-46D2-AD21-AF4F18DF213A}</Project>
       <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IDALService\IDALService.csproj">
+    <ProjectReference Include="..\IDALService\IDALServices.csproj">
       <Project>{40533482-388B-4F4C-8C96-578618BAABFD}</Project>
-      <Name>IDALService</Name>
+      <Name>IDALServices</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\TestRun\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

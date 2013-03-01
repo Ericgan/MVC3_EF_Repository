@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{790E6D3D-2046-46D2-AD21-AF4F18DF213A}</ProjectGuid>
+    <ProjectGuid>{40533482-388B-4F4C-8C96-578618BAABFD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Model</RootNamespace>
-    <AssemblyName>Model</AssemblyName>
+    <RootNamespace>IDALServices</RootNamespace>
+    <AssemblyName>IDALServices</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,13 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\ref\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,9 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MatCat\TestRun.cs" />
-    <Compile Include="PkgOrder.cs" />
+    <Compile Include="MatCat\IMatCatService.cs" />
+    <Compile Include="MatCat\ITestRunRepository.cs" />
+    <Compile Include="PkgOrderDB\IPkgOrderDBContext.cs" />
+    <Compile Include="MatCat\IMatCatContext.cs" />
+    <Compile Include="PkgOrderDB\IPkgOrderRepository.cs" />
+    <Compile Include="PkgOrderDB\IPkgOrderService.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{790E6D3D-2046-46D2-AD21-AF4F18DF213A}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,6 +7,8 @@ using System.Web.Routing;
 using Microsoft.Practices.Unity;
 using IDALServices;
 using DALServices;
+using IDALServices.MatCat;
+using DALServices.MatCat;
 
 namespace Web
 {
@@ -46,7 +48,10 @@ namespace Web
         {
             var container = new UnityContainer();
             container.RegisterType<IPkgOrderService, PkgOrderService>(new PerThreadLifetimeManager())
-                          .RegisterType<IDALContext, DALContext>();
+                          .RegisterType<IPkgOrderDBDALContext, PkgOrderDBContext>();
+            container.RegisterType<IMatCatService, MatCatService>(new PerThreadLifetimeManager())
+                .RegisterType<IMatCatContext, MatCatContext>();
+
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }

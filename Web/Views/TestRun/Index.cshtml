@@ -1,0 +1,14 @@
+﻿@model IQueryable<Model.MatCat.TestRun>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+@foreach (var o in Model)
+{
+    <li>@o.RunId</li>
+}
+</ul>

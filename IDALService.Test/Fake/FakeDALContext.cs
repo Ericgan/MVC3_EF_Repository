@@ -6,7 +6,7 @@ using IDALServices;
 
 namespace IDALServices.Test.Fake
 {
-    public class FakeDALContext : IDALContext
+    public class FakeDALContext : IPkgOrderDBDALContext
     {
         private IPkgOrderRepository pkgOrderRepository = null;
 

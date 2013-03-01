@@ -9,19 +9,18 @@ using IDALServices;
 
 namespace DALServices
 {
-    internal class Repository<TObject> : IRepository<TObject>
+    public class Repository<TObject> : IRepository<TObject>
         where TObject : class
     {
         private bool shareContext = false;
 
-
-        protected PkgOrderDB Context = null;
+        protected DbContext Context = null;
         public Repository()
         {
-            Context = new PkgOrderDB();
+            //Context = new PkgOrderDB();
         }
 
-        public Repository(PkgOrderDB context)
+        public Repository(DbContext context)
         {
             this.Context = context;
             shareContext = true;

@@ -25,6 +25,5 @@ namespace Web.Controllers
             var pkgOrders = service.GetPkgOrders().Take(20);
             return View(pkgOrders);
         }
-
     }
 }

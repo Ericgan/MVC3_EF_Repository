@@ -18,7 +18,7 @@ namespace IDALServices.Test
         [TestInitialize]
         public void TestInitialize()
         {
-            IDALContext dal = new FakeDALContext();
+            IPkgOrderDBDALContext dal = new FakeDALContext();
             service = new PkgOrderService(dal);
         }
 
